@@ -1,0 +1,131 @@
+/* 频道广场模块 */
+
+
+/* 
+.channelB {
+    background-color: #f4f4f4;
+} */
+
+.floorhd {
+    height: 65px;
+    width: 1190px;
+    margin: 0 auto;
+}
+
+.grid_c1 {
+    margin: 0 auto;
+    width: 1190px;
+}
+
+.floorhd_tit {
+    position: relative;
+    width: 150px;
+    height: 45px;
+    font-size: 28px;
+    font-weight: 700;
+    text-align: center;
+    line-height: 45px;
+    padding: 0 30px;
+    margin: 0 auto 20px;
+    color: #333;
+    box-sizing: content-box;
+}
+
+.floorhd_tit:after,
+.floorhd_tit:before {
+    background-image: url(../images/sprite.png);
+    width: 25px;
+    height: 20px;
+    content: "";
+    position: absolute;
+    top: 50%;
+    margin-top: -10px;
+}
+
+.floorhd_tit:before {
+    background-position: 0 0;
+    left: 0;
+}
+
+.floorhd_tit:after {
+    background-position: -25px 0;
+    right: 0;
+}
+
+
+/* 头部标签结束 */
+
+.channels_block {
+    width: 1190px;
+    margin: 0 auto;
+}
+
+.channels_block_wrapper {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-right: 10px;
+}
+
+.channels_item_1>img {
+    width: 290px;
+    height: 370px;
+    background-color: #fff;
+}
+
+.channels_item_2>img {
+    width: 290px;
+    height: 370px;
+}
+
+.channels_item_3 {
+    display: flex;
+    flex-wrap: wrap;
+    width: 290px;
+    height: 370px;
+}
+
+.channels_item_3>div {
+    display: inline-block;
+    width: 290px;
+    height: 180px;
+    background-color: #fff;
+}
+
+.channels_item_img {
+    width: 290px;
+    height: 100px;
+}
+
+.channels_item_img>img {
+    margin-left: 30px;
+    width: 100px;
+    height: 100px;
+}
+
+.channels_item_title_main {
+    font-size: 22px;
+    font-weight: 700;
+    color: #333;
+}
+
+.channels_item_title_aside {
+    font-size: 14px;
+    color: #999;
+    margin-left: 5px;
+    margin-top: 15px;
+}
+
+.channels_item_title {
+    height: 30px;
+    margin-top: 20px;
+    margin-left: 30px;
+    padding-top: 17px;
+    padding-bottom: 13px;
+    line-height: 30px;
+}
+
+.channels_item_title>div {
+    margin-top: -10px;
+    text-align: center;
+}

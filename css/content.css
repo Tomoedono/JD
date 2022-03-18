@@ -1,0 +1,318 @@
+.content {
+    flex: 1;
+}
+
+.daily_special {
+    float: left;
+    width: 590px;
+    height: 340px;
+    background-color: white;
+}
+
+.lightning-buy {
+    float: right;
+    width: 590px;
+    height: 340px;
+    background-color: white;
+}
+
+.feature_preferably {
+    margin-top: 20px;
+    height: 980px;
+}
+
+.box_hd {
+    height: 60px;
+    padding: 0 20px;
+    font-size: 0;
+    line-height: 0;
+}
+
+.box_tit {
+    float: left;
+    font-weight: 700;
+    font-size: 24px;
+    color: #333;
+    line-height: 32px;
+    margin-top: 10px;
+}
+
+.box_hd_arrow {
+    background-image: url(../images/sprite2.png);
+    background-position: -16px 0;
+    width: 16px;
+    height: 16px;
+    position: relative;
+    float: left;
+    top: 9px;
+    left: 10px;
+    margin-top: 10px;
+}
+
+.box_hd_arrow:hover {
+    background-image: url(../images/sprite2.png);
+    background-position: 0 0;
+    width: 16px;
+    height: 16px;
+    position: relative;
+    float: left;
+    top: 9px;
+    left: 10px;
+}
+
+.special_tab .tab_head_item {
+    position: relative;
+    display: inline-block;
+    margin: 0 13.5px;
+}
+
+.special_tab .tab_head_item.active:after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #e1251b;
+}
+
+.tab_head {
+    float: right;
+    margin-top: 10px;
+}
+
+.special_tab .tab_head_item.active .special_tab_lk {
+    color: #e1251b;
+}
+
+.tab_head .special_tab_lk {
+    display: inline-block;
+    cursor: pointer;
+    font-size: 14px;
+    font-family: Microsoft Yahei, PingFangSC-Medium, sans-serif, serif;
+    color: #999;
+    line-height: 19px;
+    padding-bottom: 2px;
+}
+
+.special_list {
+    width: 560px;
+    height: 270px;
+    display: inline-block;
+}
+
+#J_special_offer .special_item_0 {
+    background-color: rgba(109, 126, 146, .05);
+    float: left;
+    width: 170px;
+    height: 265px;
+    margin-right: 6px;
+}
+
+#J_special_offer .special_item {
+    display: inline-block;
+    vertical-align: top;
+    width: 170px;
+    height: 89px;
+}
+
+.special_item_lk {
+    position: relative;
+    display: inline-block;
+    width: 170px;
+}
+
+#J_special_offer .special_item_0 .special_item_name {
+    margin-top: 9px;
+    margin-bottom: 4px;
+    margin-left: 4px;
+    height: 19px;
+    line-height: 19px;
+    width: 150px;
+    font-size: 13px;
+    display: inline-block;
+    text-align: center;
+}
+
+#J_special_offer .special_item_0 .special_item_price {
+    margin-top: 4px;
+    text-align: center;
+}
+
+a {
+    color: #666;
+    text-decoration: none;
+}
+
+#J_special_offer .special_item_lowestFirst {
+    display: inline-block;
+    width: 90px;
+    height: 24px;
+    position: absolute;
+    left: 0;
+    background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFoAAAAYBAMAAACIFvdWAAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAASUExURfa3PfekAPesGfenC/a0MvewJ5uweioAAABjSURBVHjajdAxDYBQAMRQBhBwEggKsECCge9fDEwEaNLcmzt16i1b6nbekrTtSOp67Knr427b+lzzKEa8FCNQy4gPH/FnI8hGkI0gG0E2gmwEYYTCCIURCiMURiiMUBihMEJd/HcrFSr6YboAAAAASUVORK5CYII=);
+    background-size: cover;
+    background-position: 50%;
+    font-family: MicrosoftYaHei-Bold, Microsoft Yahei, PingFangSC-Medium, sans-serif, serif;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 24px;
+    color: #fff;
+    letter-spacing: 0;
+    text-align: center;
+}
+
+#J_special_offer .special_item_0 .special_item_img {
+    margin-top: 46px;
+    width: 120px;
+    display: inline-block;
+    left: 50%;
+    margin-left: 25px;
+    height: 120px;
+    text-align: center;
+}
+
+#J_special_offer .special_item_price {
+    font-size: 14px;
+    color: red;
+    text-align: center;
+}
+
+#J_special_offer .special_item_sold {
+    font-size: 14px;
+    text-align: center;
+}
+
+.special_item_soldMsg .special_item_soldNum {
+    color: red;
+}
+
+.special_list .special_item_total {
+    width: 390px;
+    height: 270px;
+    margin-left: 170px;
+}
+
+.special_item_1 .special_item_box>img {
+    width: 84px;
+    height: 84px;
+    float: left;
+}
+
+.special_item_1 .special_item_tit {
+    display: inline-block;
+    width: 100%;
+    color: #333;
+    height: 32px;
+    font-size: 12px;
+    line-height: 16px;
+    overflow: hidden;
+}
+
+#J_special_offer .special_item_message_1 {
+    float: left;
+    width: 75px;
+    margin-left: 6px;
+    margin-top: 20px;
+    font-size: 0;
+}
+
+
+/* #J_special_offer .special_item_lowest {
+    display: inline-block;
+    overflow: hidden;
+    width: 84px;
+    height: 16px;
+    font-size: 11px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background: rgba(0, 0, 0, .6);
+    white-space: nowrap;
+    color: #fff;
+    text-align: center;
+    line-height: 16px;
+} */
+
+#J_special_offer .special_item_1 {
+    margin-left: 20px;
+    margin-top: 30px;
+}
+
+.special_item_1 .special_item_tit .special_item_tit-2 {
+    color: red;
+    font-size: 13px;
+}
+
+
+/* 品牌闪购 */
+
+.lightning-buy-content {
+    display: flex;
+    justify-content: space-around;
+}
+
+.lightning-buy-left {
+    width: 270px;
+    height: 265px;
+    background: linear-gradient(180deg, rgba(221, 168, 198, .05), rgba(91, 15, 55, .05));
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.lightning-buy-right {
+    margin-top: -40px;
+    width: 270px;
+    height: 312px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.lightning-buy-right-item {
+    width: 135px;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+}
+
+.lightning-buy-right-item>img {
+    width: 100px;
+    height: 50px;
+}
+
+.lightning-buy-right-item>span {
+    color: #666;
+    margin-top: 6px;
+    font-size: 12px;
+    text-align: center;
+    font-weight: 400;
+}
+
+.lightning-buy-left .lightning-buy-left-img1 {
+    width: 70px;
+    height: 35px;
+}
+
+.lightning-buy-left .lightning-buy-left-img2 {
+    width: 130px;
+    height: 130px;
+}
+
+.lightning-buy-left .lightning-buy-left-text1 {
+    color: #333;
+    font-weight: 700;
+    font-size: 16px;
+}
+
+.lightning-buy-left .lightning-buy-left-text2 {
+    font-size: 12px;
+    color: #666;
+    margin-top: -20px;
+}

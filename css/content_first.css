@@ -1,0 +1,175 @@
+/* 京东秒杀模块 */
+
+.jd_container {
+    width: 1190px;
+    height: 260px;
+    margin-top: 20px;
+    background: #fff;
+}
+
+.seckill-countdown {
+    position: relative;
+    float: left;
+    width: 190px;
+    height: 100%;
+    color: #fff;
+    background-color: #e83632;
+    background-image: url(../images/miaosha.png);
+    background-size: contain;
+    background-position: 50%;
+    background-repeat: no-repeat;
+}
+
+.seckill-countdown .countdown-title {
+    width: 100%;
+    text-align: center;
+    font-size: 30px;
+    font-weight: 700;
+    margin-top: 31px;
+}
+
+.seckill-countdown .countdown-desc {
+    margin-top: 120px;
+    font-size: 14px;
+    text-align: center;
+}
+
+.seckill-countdown .countdown-desc strong {
+    font-size: 18px;
+    padding-right: 2px;
+    vertical-align: middle;
+    display: inline-block;
+    margin-top: -1px;
+}
+
+.seckill-countdown .countdown-main {
+    margin-left: auto;
+    margin-right: auto;
+    width: 130px;
+    height: 30px;
+    margin-top: 10px;
+    display: block;
+}
+
+.timmer {
+    color: #333;
+    font-weight: 700;
+}
+
+.seckill-countdown .countdown-main .timmer__unit {
+    position: relative;
+    float: left;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    background-color: #2f3430;
+    margin-right: 20px;
+    color: white;
+    font-size: 20px;
+    line-height: 30px;
+}
+
+.seckill-countdown .countdown-main .timmer__unit--second {
+    margin-right: 0;
+}
+
+.seckill-countdown .countdown-main .timmer__unit:after {
+    content: ":";
+    display: block;
+    position: absolute;
+    right: -20px;
+    font-weight: bolder;
+    font-size: 18px;
+    width: 20px;
+    height: 100%;
+    top: 0;
+}
+
+.timmer .timmer__unit:last-child:after {
+    content: "";
+}
+
+.seckill-list .seckill-item__name {
+    font-size: 12px;
+    font-weight: 400;
+    color: #333;
+    -webkit-transition: color .2s ease;
+    transition: color .2s ease;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.seckill-brand {
+    float: right;
+    position: relative;
+    width: 200px;
+    height: 260px;
+    padding: 10px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.seckill-brand .brand-item .item-image {
+    width: 120px;
+    height: 120px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+}
+
+.seckill-brand .brand-item .item-info {
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, .5)), to(rgba(220, 224, 236, .5)));
+    background: linear-gradient(180deg, rgba(255, 255, 255, .5), rgba(220, 224, 236, .5));
+    text-align: center;
+    font-size: 14px;
+    position: relative;
+    width: 100%;
+    height: 90px;
+    margin-top: 10px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.lazyimg_img {
+    width: 100%;
+    height: 100%;
+    transition: opacity 0.2s linear 0s;
+    backface-visibility: hidden;
+}
+
+.seckill-brand .brand-item .item-info-action {
+    color: #e1251b;
+    border-radius: 14px;
+    width: 82px;
+    height: 24px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    text-align: center;
+    display: inline-block;
+    line-height: 22px;
+    font-weight: 700;
+    padding-left: 4px;
+    font-size: 12px;
+    border: 1px solid #e1251b;
+    margin-top: 4px;
+    -webkit-transition: background-color .2s ease;
+    transition: background-color .2s ease;
+}
+
+.seckill-brand .brand-item .item-info-action:hover {
+    color: white;
+    border-color: transparent;
+    background-color: #c81623;
+}
+
+.seckill-brand .brand-item .item-info-title {
+    color: #333;
+    font-size: 14px;
+}
+
+.seckill-brand .brand-item .item-info-promo {
+    color: #333;
+    font-weight: 700;
+    font-size: 14px;
+}
