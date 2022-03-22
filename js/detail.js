@@ -43,12 +43,8 @@ $.get("http://jx.xuzhixiang.top/ap/api/detail.php", {
             }, (res) => {
                 console.log(res);
                 if (res.msg == "插入成功" || "修改成功") {
-                    $("body").append("<div class='alert'></div>")
-                    $(".alert").show()
-                    $(".alert").html('加入购物车成功 ')
-                    setTimeout(() => {
-                        location.href = 'cart.html'
-                    }, 800);
+                        alert("加入购物车成功")
+                        loadList()
                 } else {
                     alert(res.msg)
                 }

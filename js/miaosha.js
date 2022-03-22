@@ -1,13 +1,21 @@
 var hour = document.querySelector(".timmer__unit--hour")
 var minute = document.querySelector(".timmer__unit--minute")
 var second = document.querySelector(".timmer__unit--second")
-var inputTime = +new Date("2023-9-26 14:00:00")
+var inputTime = new Date()
+if(inputTime.getHours() %2 ==0){
+inputTime=parseInt(inputTime.getTime()/1000/60/60)*1000*60*60+(1000*60*120)}
+else{
+    inputTime=parseInt(inputTime.getTime()/1000/60/60)*1000*60*60+(1000*60*60)
+}
 countdown()
 setInterval(countdown, 1000);
 
 function countdown() {
     var nowTime = +new Date();
     var times = (inputTime - nowTime) / 1000;
+    if(times<0){
+        location.reload();
+    }
     var h = parseInt(times / 60 / 60 % 24);
     h = h < 10 ? '0' + h : h;
     hour.innerHTML = h;

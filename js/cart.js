@@ -11,7 +11,7 @@ function loadList() {
     $.get("http://jx.xuzhixiang.top/ap/api/cart-list.php", {
         id: uid
     }, (res) => {
-        res.data.forEach((item) => {
+        res.data.forEach((item,index) => {
             str += `
                 <ul>
                     <li>
@@ -31,7 +31,7 @@ function loadList() {
                         <span>${(item.pprice*item.pnum).toFixed(2)}</span>
                     </li>
                     <li>
-                        <button onclick="delFN(${uid},${item.pid})">删除</button>
+                        <button onclick="delFN(${uid},${item.pid},this)">删除</button>
                     </li>
                 </ul>
             `
@@ -80,8 +80,8 @@ function jia(uid, pid, pnum, pprice, is) {
     updata(uid, pid, pnum, pprice, is)
 }
 
-function delFN(uid, pid) {
-    
+function delFN(uid, pid,is) {
+    console.log($(is).parent().parent());
     $.get("http://jx.xuzhixiang.top/ap/api/cart-delete.php", {
         uid,
         pid
@@ -89,8 +89,9 @@ function delFN(uid, pid) {
         if (res.msg == "删除成功") {
             $(".alert").css("opacity", "1")
             $(".alert").html('删除成功')
-            loadList()
-            // js()
+            $(is).parent().parent().remove()
+            dxckb()
+            allckb()
             setTimeout(() => {
                 $(".alert").css("opacity", "0")
             }, 500);

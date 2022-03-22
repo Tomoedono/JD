@@ -6,9 +6,9 @@ setInterval(countdown_desc, 1000);
 
 function countdown_desc() {
     var h = parseInt(hours)
-    if (hours % 2 == 0) {
+    if (h % 2 == 0) {
         desc.innerHTML = h + ":00";
     } else {
-        desc.innerHTML = h - 1 + ":00";
+        desc.innerHTML = (h - 1) + ":00";
     }
 }
